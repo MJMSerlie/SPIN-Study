@@ -1,0 +1,2 @@
+
+singularity run --cleanenv -B /scratch/spin:/try  /scratch/singularity_images/fmriprep-1.2.3.simg /try/data/ /try/output/ participant --fs-license-file /try/license.txt --nthreads 4 --omp-nthreads 2 --template-resampling-grid /try/MNI152_T1_2mm_brain.nii.gz --use-aroma --fs-no-reconall --ignore slicetiming -w /try/tmp/
